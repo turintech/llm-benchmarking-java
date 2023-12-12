@@ -1,5 +1,7 @@
 package control;
 
+import java.util.Vector;
+
 public class Single {
   /**
    * This method is used to calculate the sum of the first n natural numbers.
@@ -42,19 +44,13 @@ public class Single {
    * @param m The modulus.
    */
   public static int SumModulus(int n, int m) {
-    int[] arr = new int[n];
-    int sum = 0;
+    Vector<Integer> multiples = new Vector<Integer>();
     for (int i = 0; i < n; i++) {
-      if (arr[i] > n) {
-        break;
+      if (i % m == 0) {
+        multiples.add(i);
       }
-      arr[i] = i % m;
     }
 
-    for (int i : arr) {
-      sum += i;
-    }
-
-    return sum;
+    return multiples.stream().mapToInt(Integer::valueOf).sum();
   }
 }
