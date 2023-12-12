@@ -5,6 +5,7 @@ import java.util.Vector;
 public class Single {
   /**
    * This method is used to calculate the sum of the first n natural numbers.
+   * n exclusive
    *
    * @param n The number of natural numbers to sum.
    * @return The sum of the first n natural numbers.
