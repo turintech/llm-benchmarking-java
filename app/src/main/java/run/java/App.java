@@ -12,12 +12,12 @@ public class App {
     public static void single() {
         System.out.println("SingleForLoop");
         System.out.println("-------------");
-        System.out.println(String.format("SumRange(10): %s", Single.SumRange(10)));
+        System.out.println(String.format("SumRange(10): %s", Single.sumRange(10)));
         System.out.println(
                 String.format("MaxArray([1, 2, 3, 4, 5]): %s",
-                        Single.MaxArray(new int[] { 1, 2, 3, 4, 5 })));
+                        Single.maxArray(new int[] { 1, 2, 3, 4, 5 })));
         System.out.println(
-                String.format("SumModulus(100, 3): %s", Single.SumModulus(100, 3)));
+                String.format("SumModulus(100, 3): %s", Single.sumModulus(100, 3)));
         System.out.println();
     }
 
@@ -25,42 +25,42 @@ public class App {
         System.out.println("DoubleForLoop");
         System.out.println("-------------");
         System.out.println(
-                String.format("SumSquare(10): %s", Double.SumSquare(10)));
+                String.format("SumSquare(10): %s", Double.sumSquare(10)));
         System.out.println(
-                String.format("SumTriangle(10): %s", Double.SumTriangle(10)));
+                String.format("SumTriangle(10): %s", Double.sumTriangle(10)));
         System.out.println(
                 String.format("CountPairs([1, 2, 3, 4, 5]): %s",
-                        Double.CountPairs(new int[] { 1, 2, 3, 4, 5, 2 })));
+                        Double.countPairs(new int[] { 1, 2, 3, 4, 5, 2 })));
         System.out.println(
                 String.format("CountDuplicates([1, 2, 3, 4, 5], [1, 3, 2, 4, 5]): %s",
-                        Double.CountDuplicates(new int[] { 1, 2, 3, 4, 5 },
+                        Double.countDuplicates(new int[] { 1, 2, 3, 4, 5 },
                                 new int[] { 1, 3, 2, 4, 5 })));
         System.out.println();
     }
 
     public static void vector() {
-        Vector<Integer> inputVec = GenVector.GenerateVector(10, 10);
-        Vector<Integer> inputVec2 = GenVector.GenerateVector(10, 10);
+        Vector<Integer> inputVec = GenVector.generateVector(10, 10);
+        Vector<Integer> inputVec2 = GenVector.generateVector(10, 10);
 
         System.out.println("Vector");
         System.out.println("------");
         System.out.println(
                 String.format("ModifyVector(%s): %s", inputVec.toString(),
-                        DsVector.ModifyVector(inputVec).toString()));
+                        DsVector.modifyVector(inputVec).toString()));
         System.out.println(String.format("SearchVector(%s, 5): %s",
                 inputVec.toString(),
-                DsVector.SearchVector(inputVec, 5)));
+                DsVector.searchVector(inputVec, 5)));
         System.out.println(String.format("SortVector(%s): %s", inputVec.toString(),
-                DsVector.SortVector(inputVec).toString()));
+                DsVector.sortVector(inputVec).toString()));
         System.out.println(
                 String.format("ReverseVector(%s): %s", inputVec.toString(),
-                        DsVector.ReverseVector(inputVec).toString()));
+                        DsVector.reverseVector(inputVec).toString()));
         System.out.println(
                 String.format("RotateVector(%s, 3): %s", inputVec.toString(),
-                        DsVector.RotateVector(inputVec, 3).toString()));
+                        DsVector.rotateVector(inputVec, 3).toString()));
         System.out.println(String.format(
                 "MergeVectors(%s, %s): %s", inputVec.toString(), inputVec2.toString(),
-                DsVector.MergeVectors(inputVec, inputVec2).toString()));
+                DsVector.mergeVectors(inputVec, inputVec2).toString()));
 
         System.out.println();
     }
@@ -77,7 +77,7 @@ public class App {
     }
 
     public static void sort() {
-        Vector<Integer> initialVec = GenVector.GenerateVector(20, 10);
+        Vector<Integer> initialVec = GenVector.generateVector(20, 10);
         System.out.println("Sort");
         System.out.println("------");
         Vector<Integer> inputVec0 = new Vector<Integer>(initialVec);

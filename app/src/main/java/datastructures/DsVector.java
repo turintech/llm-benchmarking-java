@@ -9,7 +9,7 @@ public class DsVector {
    * @param arr the vector to be incremented
    * @return the incremented vector
    */
-  public static Vector<Integer> ModifyVector(Vector<Integer> v) {
+  public static Vector<Integer> modifyVector(Vector<Integer> v) {
     for (int i = 0; i < v.size(); i++) {
       v.set(i, v.get(i) + 1);
     }
@@ -22,7 +22,7 @@ public class DsVector {
    * @param v the vector to be searched
    * @ A vector of all indices where n was found
    */
-  public static Vector<Integer> SearchVector(Vector<Integer> v, int n) {
+  public static Vector<Integer> searchVector(Vector<Integer> v, int n) {
     Vector<Integer> indices = new Vector<Integer>();
     for (int i = 0; i < v.size(); i++) {
       if (v.get(i) == n) {
@@ -38,7 +38,7 @@ public class DsVector {
    * @param v the vector to be sorted
    * @return the sorted vector
    */
-  public static Vector<Integer> SortVector(Vector<Integer> v) {
+  public static Vector<Integer> sortVector(Vector<Integer> v) {
     Vector<Integer> ret = new Vector<Integer>(v);
 
     for (int i = 0; i < ret.size(); i++) {
@@ -59,7 +59,7 @@ public class DsVector {
    * @param v the vector to be reversed
    * @return the reversed vector
    */
-  public static Vector<Integer> ReverseVector(Vector<Integer> v) {
+  public static Vector<Integer> reverseVector(Vector<Integer> v) {
     Vector<Integer> ret = new Vector<Integer>();
 
     for (int i = v.size() - 1; i >= 0; i--) {
@@ -75,7 +75,7 @@ public class DsVector {
    * @param n the number of times to rotate the vector
    * @return the rotated vector
    */
-  public static Vector<Integer> RotateVector(Vector<Integer> v, int n) {
+  public static Vector<Integer> rotateVector(Vector<Integer> v, int n) {
     Vector<Integer> ret = new Vector<Integer>();
 
     for (int i = n; i < v.size(); i++) {
@@ -94,7 +94,7 @@ public class DsVector {
    * @param v2 the second vector to be merged
    * @return the merged vector
    */
-  public static Vector<Integer> MergeVectors(Vector<Integer> v1,
+  public static Vector<Integer> mergeVectors(Vector<Integer> v1,
       Vector<Integer> v2) {
     Vector<Integer> ret = new Vector<Integer>();
 

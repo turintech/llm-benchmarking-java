@@ -9,7 +9,7 @@ public class Single {
    * @param n The number of natural numbers to sum.
    * @return The sum of the first n natural numbers.
    */
-  public static int SumRange(int n) {
+  public static int sumRange(int n) {
     int[] arr = new int[n];
     int sum = 0;
     for (int i = 0; i < n; i++) {
@@ -27,7 +27,7 @@ public class Single {
    * @param arr The array of integers.
    * @return The maximum value in the array.
    */
-  public static int MaxArray(int[] arr) {
+  public static int maxArray(int[] arr) {
     int max = 0;
     for (int i : arr) {
       if (i > max) {
@@ -43,7 +43,7 @@ public class Single {
    * @param n The number of natural numbers to sum.
    * @param m The modulus.
    */
-  public static int SumModulus(int n, int m) {
+  public static int sumModulus(int n, int m) {
     Vector<Integer> multiples = new Vector<Integer>();
     for (int i = 0; i < n; i++) {
       if (i % m == 0) {

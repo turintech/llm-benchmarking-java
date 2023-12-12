@@ -11,7 +11,7 @@ public class GenVector {
    * @param m The maximum value of any element in the vector (non-inclusive)
    * @return A vector of length n
    */
-  public static Vector<Integer> GenerateVector(int n, int m) {
+  public static Vector<Integer> generateVector(int n, int m) {
     Vector<Integer> ret = new Vector<Integer>();
     Random rand = new Random();
 

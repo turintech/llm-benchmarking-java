@@ -7,7 +7,7 @@ public class Double {
    * @param n The number of natural numbers to sum.
    * @return The sum of the first n natural numbers squared.
    */
-  public static int SumSquare(int n) {
+  public static int sumSquare(int n) {
     int sum = 0;
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < i; j++) {
@@ -25,7 +25,7 @@ public class Double {
    * @param n The number of triangular numbers to sum.
    * @return The sum of the first n triangular numbers.
    */
-  public static int SumTriangle(int n) {
+  public static int sumTriangle(int n) {
     int sum = 0;
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < i; j++) {
@@ -43,7 +43,7 @@ public class Double {
    * @param arr The array of integers.
    * @return The number of pairs in the array.
    */
-  public static int CountPairs(int[] arr) {
+  public static int countPairs(int[] arr) {
     int count = 0;
     for (int i = 0; i < arr.length; i++) {
       int nDuplicates = 0;
@@ -67,7 +67,7 @@ public class Double {
    * @return The number of instances where the values at the same index are
    *         equal.
    */
-  public static int CountDuplicates(int[] arr0, int[] arr1) {
+  public static int countDuplicates(int[] arr0, int[] arr1) {
     int count = 0;
     for (int i = 0; i < arr0.length; i++) {
       for (int j = 0; j < arr1.length; j++) {
@@ -87,7 +87,7 @@ public class Double {
    * @param arr The 2D array of integers.
    * @return The sum of all values in the 2D array.
    */
-  public static int SumMatrix(int[][] arr) {
+  public static int sumMatrix(int[][] arr) {
     int sum = 0;
     int n = arr.length;
     for (int i = 0; i < n; i++) {
