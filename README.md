@@ -5,7 +5,7 @@
 Build:
 
 ```shell
-./gradlew build
+./gradlew build -x test
 ```
 
 Run Main:
